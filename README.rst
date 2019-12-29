@@ -1,19 +1,29 @@
 36i3 - what's in your config?
 =============================
 
-Notes from `this workshop <https://events.ccc.de/congress/2019/wiki/index.php/Session:36i3_-_what%27s_in_your_config%3F>`_.
-
-projects:
+About
+-----
+Notes from `this workshop
+<https://events.ccc.de/congress/2019/wiki/index.php/Session:36i3_-_what%27s_in_your_config%3F>`_
+about config fun for
 
 * i3 (X11): https://i3wm.org/
 * i3-gaps (X11): https://github.com/Airblader/i3
 * sway (Wayland): https://swaywm.org/
 
-workshop:
+The "workshop" (a.k.a. sitting on the floor with a laptop and other people) was held
+at the `36th Chaos Communication Congress
+<https://events.ccc.de/congress/2019/wiki/index.php/Main_Page>`_. Original idea
+by @ricma.
 
-* Attendees: 24 out of 18000 :)
-* Sway users: 4 :-D
-* i3-gaps: probably all Manjaro users?
+* Attendees: 24 out of 18000
+* Sway users: 4
+* i3-gaps users: at least 1, probably all Manjaro users?
+
+Share your config
+-----------------
+At the bottom of this file, we collect links to people's configs. If you like to
+share yours, send me a pull request or shoot me an email (git .a. elcorto . com).
 
 Workshop notes
 ==============
@@ -90,7 +100,7 @@ sway
 * Wiki has list of replacements applications for tools that work only with X11
   (such as ``xbacklight``)
 
-Random CLI-fun
+Random LI-fun
 --------------
 * use more ``dmenu``/``rofi`` for all things interactive, e.g. interactive mounting
 * terminal ``st`` (from suckless?) super fast
@@ -110,4 +120,7 @@ This is a list of configs from the workshoppers. Please add a link to your
 config here. If you have a particularly cool feature in there, add a short 1-2
 sentence blurb.
 
+example:
 
+http://github.com/you/repo -- I use ``i3foo`` instead of ``i3bar``, it's beyond
+Awesome!!1!!!!!111

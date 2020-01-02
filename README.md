@@ -59,11 +59,17 @@ Notification
 
 xrandr
 ------
-* functionality (mostly) built into `sway`
+* Wayland/`sway`
+    * functionality (mostly) built in
+* X11
+    * popular GUI [arandr](https://christian.amsuess.com/tools/arandr)
+    * [autorandr](https://github.com/phillipberndt/autorandr): automatically
+      select a display configuration based on connected devices
 
 Docs
 ----
 * [official docs](https://i3wm.org/docs)
+* [Arch Wiki](https://wiki.archlinux.org/index.php/I3) ... of course!
 * https://www.reddit.com/r/i3wm
 * https://www.reddit.com/r/unixporn/
 
@@ -91,16 +97,35 @@ backlight
 * X11: `xbacklight` or [light](https://github.com/haikarainen/light)
 * Wayland: `light`, ... probably others
 
-cool features you should know about
------------------------------------
-* [scratchpad](https://i3wm.org/docs/userguide.html#_scratchpad)
-* [for_window](https://i3wm.org/docs/userguide.html#for_window) to execute configs for specific window types
-* jump to activated window (also on other workspace): `bindsym $mod+x [urgent=last] focus`
-
 sway
 ----
 * Wiki has list of replacements applications for tools that work only with X11
   (such as `xbacklight`)
+
+Cool features you should know about
+-----------------------------------
+* [scratchpad](https://i3wm.org/docs/userguide.html#_scratchpad)
+* [for_window](https://i3wm.org/docs/userguide.html#for_window) to execute configs for specific window types
+
+Cool things you can do
+----------------------
+* jump to activated window (also on other workspace): `bindsym $mod+x [urgent=last] focus`
+* start program(s) on different workspace(s) [using i3-msg](https://unix.stackexchange.com/a/97081)
+* disable scroll-to-switch-workspace when bar is focused (e.g. mouse cursor on
+  bar): we need to disable the default binding `button4/5` = mouse wheel
+  down/up to `workspace prev/next`:
+  ```
+  bar {
+      ...
+      bindsym button4 nop
+      bindsym button5 nop
+  }
+  ```
+  See also [mouse
+  commands](https://i3wm.org/docs/userguide.html#_mouse_button_commands) and
+  [nop](https://i3wm.org/docs/userguide.html#_nop).
+
+
 
 Random CLI-fun
 --------------

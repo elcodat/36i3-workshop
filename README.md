@@ -91,6 +91,8 @@ dmenu replacement
 -----------------
 * almost everybody uses [rofi](https://github.com/davatorium/rofi)
 * `rofi -dmenu` -> behave like dmenu
+* application launcher (default `bindsym $mod+d exec dmenu_run`): use `rofi -show
+  run` instead of `dmenu_run`
 
 backlight
 ---------
